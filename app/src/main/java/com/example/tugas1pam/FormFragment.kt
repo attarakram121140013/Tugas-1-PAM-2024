@@ -12,6 +12,7 @@ class FormFragment : Fragment() {
 
     private lateinit var editTextName: EditText
     private lateinit var editTextNIM: EditText
+    private lateinit var editTextProdi: EditText
     private lateinit var editTextKelas: EditText
     private lateinit var editTextEmail: EditText
 
@@ -23,6 +24,7 @@ class FormFragment : Fragment() {
 
         editTextName = view.findViewById(R.id.edit_text_name)
         editTextNIM = view.findViewById(R.id.edit_text_NIM)
+        editTextProdi = view.findViewById(R.id.edit_text_prodi)
         editTextKelas = view.findViewById(R.id.edit_text_kelas)
         editTextEmail = view.findViewById(R.id.edit_text_email)
 
@@ -33,6 +35,9 @@ class FormFragment : Fragment() {
     }
     fun getNIM(): String {
         return editTextNIM.text.toString()
+    }
+    fun getProdi(): String {
+        return editTextProdi.text.toString()
     }
     fun getKelas(): String {
         return editTextKelas.text.toString()

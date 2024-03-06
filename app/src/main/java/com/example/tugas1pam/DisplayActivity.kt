@@ -12,10 +12,11 @@ class DisplayActivity : AppCompatActivity() {
 
         val name = intent.getStringExtra("name")
         val nim = intent.getStringExtra("nim")
+        val prodi = intent.getStringExtra("prodi")
         val kelas = intent.getStringExtra("kelas")
         val email = intent.getStringExtra("email")
 
         val textViewDisplay: TextView = findViewById(R.id.text_view_display)
-        textViewDisplay.text = "Nama: $name\nNIM: $nim\nKelas: $kelas\nEmail: $email"
+        textViewDisplay.text = "Nama: $name\nNIM: $nim\nProgram Studi: $prodi\nKelas: $kelas\nEmail: $email"
     }
 }

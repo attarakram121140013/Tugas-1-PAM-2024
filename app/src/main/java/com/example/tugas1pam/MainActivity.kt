@@ -27,12 +27,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 supportFragmentManager.findFragmentById(R.id.fragment_container) as FormFragment
             val name = formFragment.getName()
             val nim = formFragment.getNIM()
+            val prodi = formFragment.getProdi()
             val kelas = formFragment.getKelas()
             val email = formFragment.getEmail()
 
             val intent = Intent(this, DisplayActivity::class.java)
             intent.putExtra("name", name)
             intent.putExtra("nim", nim)
+            intent.putExtra("prodi", prodi)
             intent.putExtra("kelas", kelas)
             intent.putExtra("email", email)
             startActivity(intent)
